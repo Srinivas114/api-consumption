@@ -1,0 +1,22 @@
+server:
+  servlet:
+    context-path: /
+spring:
+  datasource:
+    url: jdbc:postgresql://localhost:5432/transit
+    username: postgres
+    password: root
+  jpa:
+    database:
+    database-platform: org.hibernate.dialect.PostgreSQL9Dialect
+    hibernate:
+      naming:
+        implicit-strategy: org.hibernate.boot.model.naming.ImplicitNamingStrategyJpaCompliantImpl
+      ddl-auto: create-drop
+    show-sql: true
+    properties:
+      hibernate:
+        jdbc:
+          lob:
+            non_contextual_creation: true
+        format_sql: true
