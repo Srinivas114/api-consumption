@@ -13,7 +13,7 @@ INSERT INTO public.bus_route(
 	id, created_at, updated_at, route_name, bus_number)
 	VALUES
 	(1, now(), now(), 'Route-MN', '301'),
-	(2, now(), now(), 'Route-MNA', '301A'),
+	(2, now(), now(), 'Route-MN', '301A'),
 	(3, now(), now(), 'Route-AB', '402'),
 	(4, now(), now(), 'Route-ABC', '402B'),
 	(5, now(), now(), 'Route-ABC', '402C');
@@ -45,9 +45,9 @@ INSERT INTO public.bus_timing( id, created_at, updated_at, bus_id, bus_stop_id, 
 	(7,now(),now(),1,2,'11:10:00 UTC',2),
 	(8,now(),now(),1,1,'11:30:00 UTC',2),
 
-	(9,now(),now(),2,5,'9:00:00 UTC',1),
-    (10,now(),now(),2,6,'9:20:00 UTC',1),
-    (11,now(),now(),2,7,'9:30:00 UTC',1),
-    (12,now(),now(),2,8,'10:00:00 UTC',1),
-    (13,now(),now(),2,9,'10:30:00 UTC',1)
+	(9,now(),now(),2,5,'10:00:00 UTC',1),
+    (10,now(),now(),2,6,'10:20:00 UTC',1),
+    (11,now(),now(),2,7,'10:30:00 UTC',1),
+    (12,now(),now(),2,8,'11:00:00 UTC',1),
+    (13,now(),now(),2,9,'11:30:00 UTC',1)
     ;
