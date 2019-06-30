@@ -19,15 +19,6 @@ public class BusRouteController {
     @Autowired
     NextBusService nextBusService;
 
-//    @GetMapping("/{route}/{direction}/{stop}")
-//    NextBusResponse getNextBus(@PathVariable("route") String route,
-//                               @PathVariable("direction") BusTiming.Direction direction,
-//                               @PathVariable("stop") String stop) throws Exception{
-//
-//        return  nextBusService.findNextBus(route, direction, stop);
-//
-//    }
-
     @GetMapping("/{route}/{direction}/{stop}")
     List<NextBusResponse> getNextBuses(@PathVariable("route") String route,
                                        @PathVariable("direction") BusTiming.Direction direction,
@@ -36,4 +27,5 @@ public class BusRouteController {
         return  nextBusService.findRouteBuses(route, direction, stop);
 
     }
+
 }

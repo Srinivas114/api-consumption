@@ -3,13 +3,16 @@ server:
     context-path: /
 spring:
   datasource:
-    url: jdbc:postgresql://localhost:5432/transit
-    username: postgres
-    password: root
+    url: jdbc:h2:mem:transit
+    username: sa
+    password: password
     initialization-mode: always
+  h2:
+    console:
+      enabled: true
   jpa:
     database:
-    database-platform: org.hibernate.dialect.PostgreSQL9Dialect
+    database-platform: org.hibernate.dialect.H2Dialect
     hibernate:
       naming:
         implicit-strategy: org.hibernate.boot.model.naming.ImplicitNamingStrategyJpaCompliantImpl
