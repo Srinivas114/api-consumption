@@ -11,6 +11,7 @@ public class ApiConsumptionApplicationTests {
 
 	@Test
 	public void contextLoads() {
+
 	}
 
 }

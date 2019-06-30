@@ -1,0 +1,3 @@
+test:
+  enable-embedded-database: true
+  embedded-database-url: jdbc:postgresql://localhost:54321/transit

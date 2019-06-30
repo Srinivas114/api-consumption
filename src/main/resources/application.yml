@@ -6,6 +6,7 @@ spring:
     url: jdbc:postgresql://localhost:5432/transit
     username: postgres
     password: root
+    initialization-mode: always
   jpa:
     database:
     database-platform: org.hibernate.dialect.PostgreSQL9Dialect
